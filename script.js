@@ -31,6 +31,7 @@ function renderIndex(array_contact){
     // });
 }
 
+/* ASSIGNMENT 2 PART 2  #1 */ 
 const contactList = [
     {
         name : "Oliver Queen",
@@ -94,4 +95,12 @@ function renderCreate(single_edit){
 }
 
 
+/* A2 PART 2 #2*/
 
+const contacts= document.querySelectorAll('.nav-home');
+
+contacts.addEventListener('click', cleanUpIndex);
+
+function cleanUpIndex(){
+    document.querySelector('.nav-home')
+}
