@@ -24,11 +24,9 @@ function renderIndex(array_contact){
     const main = document.querySelector(".main"); 
     for (element in array_contact){
         main.insertAdjacentHTML('beforeend', createSingleIndex(element))
-    
-    };
-    // array_contact.forEach(element => {
-        
-    // });
+
+    };  
+
 }
 
 /* ASSIGNMENT 2 PART 2  #1 */ 
@@ -96,11 +94,21 @@ function renderCreate(single_edit){
 
 
 /* A2 PART 2 #2*/
-
-const contacts= document.querySelectorAll('.nav-home');
-
+const contacts= document.querySelectorAll('.contactshome');
 contacts.addEventListener('click', cleanUpIndex);
 
 function cleanUpIndex(){
-    document.querySelector('.nav-home')
-}
+    for (let contactshome of contacts){
+        contacts.remove()
+    }
+};
+
+function renderIndex(array_contact){
+    const contactshome = document.querySelector(".contactshome"); 
+    for (element in array_contact){
+        main.insertAdjacentHTML('beforeend', createSingleIndex(element))
+
+}}
+
+
+/* #3 */
